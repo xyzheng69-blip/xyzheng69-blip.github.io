@@ -1,35 +1,26 @@
-# Xiangyang Zheng Engineering Portfolio
+# Xiangyang Zheng — Engineering Portfolio
 
-A static portfolio website designed for GitHub Pages.
+A static, responsive portfolio website designed for free hosting on GitHub Pages.
 
-## Publish on GitHub Pages
+## Featured products
 
-1. Open your `YOUR-USERNAME.github.io` repository.
-2. Click **Add file → Upload files**.
-3. Upload these files to the repository root:
-   - `index.html`
-   - `m-controller.html`
-   - `styles.css`
-   - `script.js`
-4. Commit the changes.
-5. Open **Settings → Pages**.
-6. Under **Build and deployment**, select **Deploy from a branch**.
-7. Select branch `main` and folder `/ (root)`, then save.
-
-Your site will appear at `https://YOUR-USERNAME.github.io/`.
+- M-Controller
+- Q5 / B5
+- Q6 / B6
+- Q7
+- QIRF-II
+- RDF-52
+- QVRF
+- PC configuration software
+- QVRF ConfigTools Android NFC application
 
 ## Before publishing
 
-Edit `index.html` and replace:
+1. Replace `your-email@example.com` in `index.html` and `m-controller.html`.
+2. Review every statement for public-release suitability.
+3. Add only photographs, drawings, certification marks, and company materials you are authorized to publish.
+4. For UL references, use the exact certified model, revision, scope, and approved mark. Do not imply that every variant has the same certification.
 
-- `your-email@example.com` with your public email address.
-- The title or role if you want different wording.
-- Any project contribution wording that you want to make more specific.
+## Publish on GitHub Pages
 
-## Adding projects
-
-Copy `m-controller.html`, rename the file, and update its content. Then add a new project card in `index.html`.
-
-## Attribution
-
-The M-Controller is a QEL product. Public product specifications are summarized for portfolio purposes. Product names, trademarks, and commercial documents belong to their respective owners.
+Upload all files to the root of your `username.github.io` repository, then open **Settings → Pages** and select **Deploy from a branch**, `main`, `/ (root)`.

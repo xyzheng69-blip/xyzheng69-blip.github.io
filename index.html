@@ -1,134 +1,76 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Xiangyang Zheng — engineering portfolio covering gas detection, embedded systems, industrial communications, and safety instrumentation.">
-  <title>Xiangyang Zheng | Engineering Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <script defer src="script.js"></script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Xiangyang Zheng — end-to-end product engineering portfolio covering gas detection, embedded electronics, industrial software, certification, QA, and technical documentation." name="description"/>
+<title>Xiangyang Zheng | Product Engineering Portfolio</title>
+<link href="styles.css" rel="stylesheet"/>
+<script defer="" src="script.js"></script>
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="Home">XZ<span>.</span></a>
-    <button class="menu-button" aria-expanded="false" aria-controls="main-nav">Menu</button>
-    <nav id="main-nav" class="main-nav" aria-label="Primary navigation">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#expertise">Expertise</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <main id="top">
-    <section class="hero section-shell">
-      <div class="hero-copy reveal">
-        <p class="eyebrow">Principal Engineer · Product Architect</p>
-        <h1>Engineering safer, smarter industrial systems.</h1>
-        <p class="hero-summary">I design gas-detection products, embedded control platforms, industrial communication systems, and field-ready safety instrumentation.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#projects">View projects</a>
-          <a class="button button-secondary" href="#contact">Get in touch</a>
-        </div>
-      </div>
-      <div class="hero-visual reveal" aria-hidden="true">
-        <div class="signal-card signal-card-main">
-          <span>System status</span>
-          <strong>Normal</strong>
-          <div class="signal-line"><i></i></div>
-        </div>
-        <div class="signal-card signal-card-small signal-card-one"><span>RS-485</span><strong>32 nodes</strong></div>
-        <div class="signal-card signal-card-small signal-card-two"><span>Control</span><strong>99 relays</strong></div>
-        <div class="orb"></div>
-      </div>
-    </section>
-
-    <section id="about" class="section-shell split-section">
-      <div>
-        <p class="section-kicker">About</p>
-        <h2>From concept to certified product.</h2>
-      </div>
-      <div class="body-copy">
-        <p>My work spans electronics, embedded firmware, sensing technologies, industrial networking, product certification, manufacturing support, and long-term field reliability.</p>
-        <p>This portfolio highlights selected products developed through my engineering work at Quatrosense Environmental Ltd. (QEL). Product names and specifications remain the property of their respective owners.</p>
-      </div>
-    </section>
-
-    <section id="projects" class="projects-section section-shell">
-      <div class="section-heading">
-        <div>
-          <p class="section-kicker">Selected work</p>
-          <h2>Projects</h2>
-        </div>
-        <p>Project 01</p>
-      </div>
-
-      <article class="featured-project reveal">
-        <div class="project-art">
-          <svg viewBox="0 0 640 460" role="img" aria-label="Stylized industrial gas controller illustration">
-            <defs>
-              <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0" stop-color="#1f2937"/>
-                <stop offset="1" stop-color="#0b1220"/>
-              </linearGradient>
-            </defs>
-            <rect x="108" y="38" width="424" height="382" rx="20" fill="url(#panel)"/>
-            <rect x="145" y="78" width="350" height="85" rx="8" fill="#d9f99d" opacity=".9"/>
-            <text x="175" y="118" fill="#17210d" font-family="Arial" font-size="20">SYSTEM NORMAL</text>
-            <text x="175" y="145" fill="#17210d" font-family="Arial" font-size="15">M-CONTROLLER</text>
-            <circle cx="178" cy="214" r="18" fill="#60a5fa"/>
-            <circle cx="244" cy="214" r="18" fill="#fbbf24"/>
-            <circle cx="310" cy="214" r="18" fill="#fb7185"/>
-            <circle cx="376" cy="214" r="18" fill="#34d399"/>
-            <rect x="151" y="270" width="338" height="105" rx="8" fill="#111827" stroke="#4b5563"/>
-            <g fill="#9ca3af">
-              <rect x="178" y="298" width="50" height="16" rx="4"/>
-              <rect x="242" y="298" width="50" height="16" rx="4"/>
-              <rect x="306" y="298" width="50" height="16" rx="4"/>
-              <rect x="370" y="298" width="50" height="16" rx="4"/>
-              <rect x="434" y="298" width="28" height="16" rx="4"/>
-              <rect x="178" y="334" width="284" height="12" rx="4"/>
-            </g>
-          </svg>
-        </div>
-        <div class="project-copy">
-          <p class="project-number">01 / Industrial control</p>
-          <h3>M-Controller</h3>
-          <p class="project-lead">A programmable multi-channel gas detection controller combining digital and analog sensing, alarm management, relay control, and building-system communications.</p>
-          <div class="stat-grid">
-            <div><strong>32</strong><span>Digital sensors</span></div>
-            <div><strong>8</strong><span>Analog inputs</span></div>
-            <div><strong>99</strong><span>Relay outputs</span></div>
-            <div><strong>RS-485</strong><span>Multidrop network</span></div>
-          </div>
-          <a class="text-link" href="m-controller.html">Explore the project <span>→</span></a>
-        </div>
-      </article>
-    </section>
-
-    <section id="expertise" class="section-shell expertise-section">
-      <p class="section-kicker">Core expertise</p>
-      <div class="expertise-grid">
-        <div><span>01</span><h3>Embedded Systems</h3><p>Firmware architecture, diagnostics, real-time control, hardware integration, and production support.</p></div>
-        <div><span>02</span><h3>Gas Detection</h3><p>Electrochemical, infrared, PID, catalytic, refrigerant, toxic, combustible, and oxygen sensing platforms.</p></div>
-        <div><span>03</span><h3>Industrial Networks</h3><p>BACnet MS/TP, Modbus RTU, RS-485, NFC configuration, remote I/O, and controller integration.</p></div>
-        <div><span>04</span><h3>Product Compliance</h3><p>UL, CSA, BTL, design verification, manufacturing transition, and field-performance improvement.</p></div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact-section">
-      <div class="section-shell contact-inner">
-        <p class="section-kicker">Contact</p>
-        <h2>Let’s discuss engineering, product development, or industrial sensing.</h2>
-        <p>Replace the email address below with your preferred public contact address.</p>
-        <a href="mailto:your-email@example.com">your-email@example.com</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer section-shell">
-    <span>© <span id="year"></span> Xiangyang Zheng</span>
-    <span>Built for GitHub Pages</span>
-  </footer>
+<header class="site-header">
+<a aria-label="Home" class="brand" href="#top">XZ<span>.</span></a>
+<button aria-controls="main-nav" aria-expanded="false" class="menu-button">Menu</button>
+<nav aria-label="Primary navigation" class="main-nav" id="main-nav">
+<a href="#about">About</a><a href="#products">Products</a><a href="#rebranding">Rebranding</a><a href="#scope">End-to-end scope</a><a href="#software">Software</a><a href="#contact">Contact</a>
+</nav>
+</header>
+<main id="top">
+<section class="hero section-shell">
+<div class="hero-copy reveal">
+<p class="eyebrow">Principal Engineer · Product Architect · Full-Stack Hardware Developer</p>
+<h1>I turn safety concepts into complete products.</h1>
+<p class="hero-summary">I personally designed a portfolio of industrial gas-detection products from first concept through PCB, circuitry, mechanical design, embedded firmware, PC and Android software, verification, certification support, manufacturing procedures, operation manuals, and the later QEL-to-Greystone product rebranding.</p>
+<div class="hero-actions"><a class="button button-primary" href="#products">View product portfolio</a><a class="button button-secondary" href="#scope">See my engineering scope</a></div>
+</div>
+<div aria-hidden="true" class="hero-visual reveal">
+<div class="signal-card signal-card-main"><span>Product lifecycle</span><strong>Concept → Production</strong><div class="signal-line"><i></i></div></div>
+<div class="signal-card signal-card-small signal-card-one"><span>Platforms</span><strong>7 featured</strong></div>
+<div class="signal-card signal-card-small signal-card-two"><span>Disciplines</span><strong>HW + FW + SW</strong></div><div class="orb"></div>
+</div>
+</section>
+<section class="section-shell split-section" id="about">
+<div><p class="section-kicker">About</p><h2>One engineer. The complete product lifecycle.</h2></div>
+<div class="body-copy">
+<p>My work goes beyond a single engineering discipline. For the products shown here, I led or personally completed the electrical architecture, analog and digital circuitry, PCB design, embedded software, user-interface software, enclosure and mechanical design, verification strategy, production test procedures, and end-user documentation.</p>
+<p>I also led the complete rebranding of these gas-detection products from QEL to Greystone, including product appearance, labels, 3D SolidWorks renderings, marketing images, manuals, software branding, and release documentation. The product images shown here are public Greystone product images created from my original product photography or SolidWorks work. Product names, trademarks, certification marks, and commercial materials remain the property of their respective owners.</p>
+</div>
+</section>
+<section class="projects-section section-shell" id="products">
+<div class="section-heading"><div><p class="section-kicker">Designed end-to-end</p><h2>Product portfolio</h2></div><p>Gas detection · Controllers · Interfaces</p></div>
+<div class="product-grid">
+<article class="product-card featured-card reveal"><div class="product-code">01</div><p class="project-number">Central controller</p><div class="product-image-wrap"><img alt="Greystone-branded M-Controller product" loading="lazy" src="images/m-controller-greystone.png"/></div><h3>M-Controller</h3><p>Programmable multi-channel gas detection controller with distributed sensing, alarm processing, relay control, communications, configuration, and system integration.</p><div class="mini-tags"><span>PCB</span><span>Firmware</span><span>PC software</span><span>Mechanical</span></div><a class="text-link" href="m-controller.html">View project <span>→</span></a></article>
+<article class="product-card reveal"><div class="product-code">02</div><p class="project-number">Gas transmitter family</p><div class="product-image-wrap"><img alt="Greystone-branded Q5 / B5 product" loading="lazy" src="images/q5-greystone.png"/></div><h3>Q5 / B5</h3><p>Fixed gas detection transmitter platform developed as a complete sensing product, including electronics, enclosure, firmware, calibration workflow, production testing, and technical documentation.</p><div class="mini-tags"><span>UL 2075*</span><span>UL 61010*</span><span>Embedded C</span></div></article>
+<article class="product-card reveal"><div class="product-code">03</div><p class="project-number">Gas transmitter family</p><div class="product-image-wrap"><img alt="Greystone-branded Q6 / B6 product" loading="lazy" src="images/q6-b6-greystone.png"/></div><h3>Q6 / B6</h3><p>Networked gas transmitter platform integrating sensor interfaces, local display and controls, alarm functions, field communications, configuration tools, and manufacturing support.</p><div class="mini-tags"><span>UL 61010*</span><span>RS-485</span><span>Modbus</span></div></article>
+<article class="product-card reveal"><div class="product-code">04</div><p class="project-number">Advanced transmitter</p><div class="product-image-wrap"><img alt="Greystone-branded Q7 product" loading="lazy" src="images/q7-greystone.png"/></div><h3>Q7</h3><p>Industrial gas detection transmitter designed across hardware, firmware, sensing, mechanics, user interface, diagnostics, test procedures, and field-service documentation.</p><div class="mini-tags"><span>UL 61010*</span><span>Diagnostics</span><span>Production QA</span></div></article>
+<article class="product-card reveal"><div class="product-code">05</div><p class="project-number">Infrared refrigerant detector</p><div class="product-image-wrap"><img alt="Greystone-branded QIRF-II product" loading="lazy" src="images/qirf-greystone.png"/></div><h3>QIRF-II</h3><p>Infrared refrigerant detection platform combining optical and electronic design, embedded signal processing, calibration methods, fault diagnostics, mechanical packaging, and factory test procedures.</p><div class="mini-tags"><span>NDIR</span><span>Signal processing</span><span>Calibration</span></div></article>
+<article class="product-card reveal"><div class="product-code">06</div><p class="project-number">Remote display</p><div class="product-image-wrap"><img alt="Greystone-branded RDF-52 product" loading="lazy" src="images/rdf52-greystone.png"/></div><h3>RDF-52</h3><p>Remote display and annunciation platform for distributed gas detection systems, including communications, interface electronics, embedded firmware, enclosure design, and installation documentation.</p><div class="mini-tags"><span>Remote display</span><span>RS-485</span><span>UI design</span></div></article>
+<article class="product-card reveal"><div class="product-code">07</div><p class="project-number">Refrigerant safety platform</p><div class="product-image-wrap"><img alt="Greystone-branded QVRF product" loading="lazy" src="images/qvrf-greystone.png"/></div><h3>QVRF</h3><p>Modern refrigerant detection platform with embedded control, fieldbus communications, NFC commissioning, configurable manufacturing data, diagnostics, and Android-based configuration and firmware download.</p><div class="mini-tags"><span>BACnet</span><span>Modbus</span><span>NFC</span><span>Android</span></div></article>
+</div>
+<p class="cert-note">* Certification scope depends on the specific product model, sensor, revision, and listing. Selected products achieved UL 2075 certification, while many products were evaluated or listed to UL 61010 requirements. Certification marks should only be shown with the exact approved model and listing information.</p>
+</section>
+<section class="section-shell rebrand-section" id="rebranding"><div class="section-heading"><div><p class="section-kicker">QEL → Greystone</p><h2>Full product-line rebranding</h2></div><p>Engineering continuity · New visual identity</p></div><div class="rebrand-layout"><div class="rebrand-copy"><p>Following QEL's integration into Greystone Energy Systems, I rebranded the complete gas-detection portfolio while preserving the underlying product architecture and certification-controlled design.</p><ul><li>Created or updated product photography and 3D SolidWorks renderings</li><li>Redesigned labels, overlays, enclosure graphics, model identification, and packaging</li><li>Updated firmware screens, PC software, Android applications, manuals, drawings, and production documents</li><li>Coordinated engineering change control so the Greystone versions remained technically consistent with the released QEL designs</li></ul></div><div class="rebrand-visual"><img alt="Greystone-branded QVRF product" loading="lazy" src="images/qvrf-greystone.png"/><div><span>Original engineering</span><strong>QEL product platforms</strong></div><b>→</b><div><span>Brand transition</span><strong>Greystone gas detection</strong></div></div></div></section><section class="section-shell expertise-section" id="scope">
+<p class="section-kicker">My engineering ownership</p><h2>From blank page to released product</h2>
+<div class="expertise-grid lifecycle-grid">
+<div><span>01</span><h3>System &amp; Circuit Design</h3><p>Product requirements, architecture, sensor interfaces, analog front ends, power supplies, communications, protection, diagnostics, and safety functions.</p></div>
+<div><span>02</span><h3>PCB &amp; Hardware</h3><p>Schematic capture, component selection, PCB layout direction, prototypes, bring-up, design correction, EMC improvement, and production release.</p></div>
+<div><span>03</span><h3>Embedded Firmware</h3><p>Real-time control, calibration, signal processing, alarms, relays, diagnostics, Modbus, BACnet, NFC, bootloading, and field-update strategy.</p></div>
+<div><span>04</span><h3>Mechanical Design</h3><p>Enclosure concepts, mounting, sensor chambers, optical and airflow considerations, cable access, assembly details, labels, and production drawings.</p></div>
+<div><span>05</span><h3>Verification &amp; Compliance</h3><p>Design verification, environmental and functional testing, failure analysis, certification support, UL 2075, UL 61010, and manufacturing qualification.</p></div>
+<div><span>06</span><h3>Production &amp; Documentation</h3><p>QA test procedures, calibration procedures, manufacturing tools, troubleshooting instructions, installation manuals, operation manuals, and release control.</p></div>
+</div>
+</section>
+<section class="software-section section-shell" id="software">
+<div class="section-heading"><div><p class="section-kicker">Software ecosystem</p><h2>Tools that complete the product</h2></div></div>
+<div class="software-grid">
+<article><p class="project-number">Windows / PC</p><h3>Configuration Software</h3><p>PC-based applications for device setup, network configuration, calibration, diagnostics, commissioning, data management, and production support.</p><ul><li>Device configuration and cloning</li><li>Calibration and service workflows</li><li>Communication and diagnostic tools</li><li>Factory and field support</li></ul></article>
+<article><p class="project-number">Android / NFC</p><h3>QVRF ConfigTools</h3><p>An Android NFC application for fast commissioning and service of QVRF devices, including configuration, cloning, calibration, diagnostics, and firmware download.</p><ul><li>Configuration of unpowered devices through NFC memory</li><li>Batch cloning and commissioning</li><li>Password-controlled service functions</li><li>NFC-based firmware transfer and update</li></ul></article>
+</div>
+</section>
+<section class="contact-section" id="contact"><div class="section-shell contact-inner"><p class="section-kicker">Contact</p><h2>Engineering leadership across electronics, firmware, software, mechanics, compliance, and manufacturing.</h2><p>Replace the email address below with your preferred public contact address.</p><a href="mailto:your-email@example.com">your-email@example.com</a></div></section>
+</main>
+<footer class="site-footer section-shell"><span>© <span id="year"></span> Xiangyang Zheng</span><span>Personal engineering portfolio · Built for GitHub Pages</span></footer>
 </body>
 </html>
