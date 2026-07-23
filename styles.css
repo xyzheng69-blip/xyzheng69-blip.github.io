@@ -213,6 +213,14 @@ img{max-width:100%}
 .sw-card p,.sw-card li{color:var(--muted)}
 .sw-card ul{padding-left:18px;margin:12px 0 0}
 .sw-card li{margin:6px 0}
+.sw-shots{display:flex;gap:12px;margin:20px 0 6px}
+.sw-shots img{border-radius:12px;border:1px solid var(--line-strong);background:#0b1220;
+  box-shadow:0 12px 30px rgba(0,0,0,.35);transition:transform .25s,box-shadow .25s}
+.sw-shots img:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(0,0,0,.5)}
+.sw-shots--phone img{width:calc((100% - 24px)/3);object-fit:cover;aspect-ratio:1080/2316}
+.sw-shots--win{flex-direction:column}
+.sw-shots--win img{width:100%}
+@media(max-width:640px){.sw-shots--phone img{aspect-ratio:auto;height:auto}}
 
 /* ---------- About ---------- */
 .about{background:radial-gradient(50% 70% at 0 100%,rgba(52,211,153,.08),transparent 60%),var(--bg)}
