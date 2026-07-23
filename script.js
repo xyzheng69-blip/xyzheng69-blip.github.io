@@ -1,3 +1,7 @@
 const menuButton=document.querySelector('.menu-button');const nav=document.querySelector('#main-nav');if(menuButton&&nav){menuButton.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')))}
 document.querySelectorAll('#year').forEach(el=>el.textContent=new Date().getFullYear());
 const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add('visible')}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+// Animated count-up for [data-count]
+const reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const counters=document.querySelectorAll('b[data-count]');
+if(counters.length){const co=new IntersectionObserver((entries,ob)=>entries.forEach(e=>{if(!e.isIntersecting)return;const el=e.target;ob.unobserve(el);const end=parseFloat(el.getAttribute('data-count'))||0;const suf=el.getAttribute('data-suffix')||'';if(reduce){el.textContent=end+suf;return;}const dur=1400,t0=performance.now();const tick=now=>{const p=Math.min(1,(now-t0)/dur);const val=Math.round((1-Math.pow(1-p,3))*end);el.textContent=val+suf;if(p<1)requestAnimationFrame(tick);};requestAnimationFrame(tick);}),{threshold:.6});counters.forEach(c=>co.observe(c));}
