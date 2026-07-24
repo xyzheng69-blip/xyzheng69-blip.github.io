@@ -300,9 +300,15 @@ img{max-width:100%}
 .project-product-photo img{width:min(520px,100%);height:360px;object-fit:contain}
 
 /* ---------- v1.1: hero lede, glass, philosophy, certs ---------- */
-.hero-lede{font-size:clamp(1.8rem,3.8vw,3.3rem);line-height:1.14;letter-spacing:-.03em;font-weight:800;margin:0}
+.hero-brand{font-size:clamp(3rem,8vw,6rem);line-height:1;letter-spacing:-.045em;font-weight:900;margin:0;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-brand-sub{margin:16px 0 0;font-size:.82rem;font-weight:700;text-transform:uppercase;letter-spacing:.34em;color:var(--muted)}
+.hero-person{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;
+  margin:30px auto 0;padding-top:26px;max-width:560px;border-top:1px solid var(--line)}
+.hero-person strong{font-size:1.35rem;font-weight:700;letter-spacing:-.02em;color:var(--ink)}
+.hero-person span{font-size:.95rem;color:var(--muted);padding-left:14px;border-left:1px solid var(--line-strong)}
+.hero-lede{font-size:clamp(1.5rem,3.1vw,2.5rem);line-height:1.22;letter-spacing:-.03em;font-weight:800;margin:34px 0 0}
 .hero-lede .lede-final{font-weight:600;color:var(--muted)}
-.hero-name{margin:26px auto 0;color:var(--ink);font-weight:600;font-size:1.02rem;max-width:720px}
 .glass{background:rgba(255,255,255,.045);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.09)}
 .stat.glass{border-left:1px solid rgba(255,255,255,.09)}
 .stat b[data-count]{font-variant-numeric:tabular-nums}
@@ -319,7 +325,8 @@ img{max-width:100%}
 .cert-mark{display:inline-block;font-weight:800;font-size:1.05rem;letter-spacing:.02em;margin-bottom:14px;padding:8px 15px;border-radius:10px;background:var(--grad);color:#05121c}
 .cert-card p{margin:0;color:var(--muted);font-size:.95rem}
 @media(max-width:980px){.cert-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:640px){.cert-grid{grid-template-columns:1fr}.lifecycle{gap:10px}.lifecycle .lc{width:100%}.lifecycle .lc:not(:last-child){margin-right:0}.lifecycle .lc:not(:last-child):after{content:"↓";right:auto;left:50%;top:auto;bottom:-16px;transform:translateX(-50%)}}
+@media(max-width:640px){.hero-person{gap:6px}.hero-person span{border-left:0;padding-left:0}.hero-brand-sub{letter-spacing:.24em}
+.cert-grid{grid-template-columns:1fr}.lifecycle{gap:10px}.lifecycle .lc{width:100%}.lifecycle .lc:not(:last-child){margin-right:0}.lifecycle .lc:not(:last-child):after{content:"↓";right:auto;left:50%;top:auto;bottom:-16px;transform:translateX(-50%)}}
 
 /* ---------- Responsive ---------- */
 @media(max-width:980px){
